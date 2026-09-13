@@ -21,7 +21,7 @@
     "test:run": "vitest run",
     "test:coverage": "vitest run --coverage",
     "test:watch": "vitest watch",
-    "build:docker": "vite build",
+    "build:docker": "vite build && node scripts/generate-security-headers.mjs",
     "format": "prettier --write .",
     "release": "node scripts/release.js patch",
     "release:minor": "node scripts/release.js minor",
